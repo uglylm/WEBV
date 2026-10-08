@@ -1,0 +1,24 @@
+Sample AI prompt — replace with the prompt for your actual design.
+
+Create an original podcast network landing page for “echo.” Use a deep aubergine background, warm-lavender text, mauve accents, and a distinctive original microphone/record illustration. The tone celebrates thoughtful voices and long conversations. The delivered page must not depend on real audio or external podcast artwork.
+
+Design tokens: canvas #14121b; surface #211c2c; deep card #32263d; text #efe6fa; accent #cba3e5 and #d3ade8; muted copy #a496b3; border #362d44. Use bold system sans-serif headings, 64–72px desktop hero type, 16px readable body copy, pill-shaped calls to action, and 12–14px card corners.
+
+Page structure:
+1. Header: lowercase echo. wordmark, links Discover, Shows, and About the network.
+2. Hero: eyebrow “Good stories. Better company.”; two-line headline “There’s more / to the story.”; description “Voices that stay with you. Conversations worth your time.” A lavender “Find your next listen” link targets the shows collection. On the right, make a square artwork panel with concentric mauve circles and an original microphone-like geometric silhouette. Its caption is “THE LONG WAY HOME”.
+3. Below the hero, include a featured episode bar with circular triangular play button, title “Episode 08 / Starting again”, subtitle “The Long Way Home · 42 min”, an original waveform, and elapsed/total time. Since no audio is supplied, the play control opens an accessible small notice explaining “Sample player — attach an audio file to enable playback.” It must never pretend to stream audio or advance a fake playing time. Decorative waveform is hidden from assistive technology.
+4. Shows collection: three cards with original abstract cover art and sample fictional series such as The Long Way Home, Small Questions, and After Hours. Include short descriptions and episode count explicitly identified as sample data. Cards link to descriptive show sections lower on the same page.
+5. Episode list: six fictional episodes with show title, episode name, short summary, duration, and an expandable transcript sample implemented with details/summary. Provide an accessible show filter, or simple anchors if that is more robust.
+6. About section: a short account of the fictional network’s editorial values without real host biographies or credentials. Add a local-demo email signup form with labeled fields, validation, and clear feedback stating it is not connected. Footer contains internal links.
+
+On mobile, place the hero text before the artwork, turn the episode bar into stacked rows, and ensure the waveform never causes overflow. Respect reduced motion and retain clear keyboard focus.
+
+Implementation and delivery requirements:
+- Return one complete, self-contained index.html with inline CSS and JavaScript. Do not require a build step, framework, third-party scripts, external fonts, or remote assets. Use system font stacks and original CSS or inline SVG artwork for all visuals. Do not reproduce third-party brands or invent customer endorsements.
+- Use semantic header, nav, main, section, article, and footer elements with exactly one h1 and a logical heading hierarchy. Include a skip link, descriptive link text, accessible input labels, high-contrast focus indicators, and meaningful alt text for informative artwork. Mark decorative SVGs aria-hidden. All controls must work with a keyboard.
+- Build mobile first. At about 760px, collapse split heroes and card grids to one column; at about 1100px, constrain content in a centered max-width container. Support widths from 320px without horizontal scrolling. Touch controls need adequate hit areas. Text should scale with clamp(), while line lengths remain readable.
+- Honor prefers-reduced-motion. Any animation must be subtle and stop when reduced motion is requested. The design must remain clear when JavaScript is unavailable.
+- Use genuine anchors for navigation to sections and meaningful buttons for actions. Any demonstration-only behavior must say it is a demo; do not simulate a real purchase, subscription, booking, audio stream, or submitted message. Avoid placeholder hash links that lead nowhere. Do not store personal information.
+- Use original sample copy for the specified brand. Create enough content to feel complete: the requested hero, supporting sections, final call to action, and footer. Do not include the “Sample design” overlay from the catalog preview.
+- Check that links reach their target sections, all buttons have a clear result, content remains readable at 200% zoom, and no errors occur in the browser console. Return the final HTML in a single code block with no setup steps required.

@@ -1,0 +1,25 @@
+Sample AI prompt — replace with the prompt for your actual design.
+
+Create an original fitness club landing page for “PULSE”, with the message that consistent effort creates personal momentum. The visual direction is strong typography, a charcoal-black background, acid-lime accents, generous geometric blocks, and an original stylized athlete illustration. Do not use stock photography or a real gym logo.
+
+Design tokens: page background #171915; surface #23291c; pale foreground #f0f3e4; muted copy #b0b69d; lime #d7f47b; lines #3f4335. Use Arial/system sans-serif, extra-bold uppercase display headings, tight tracking, 14px uppercase labels, 16px body text, pill-shaped primary links, and 10–14px panel corners.
+
+Page structure:
+1. Header: PULSE / wordmark, links to Programs, Coaches, Membership, and a “Join the club” action pointing to the contact section. Keep the navigation minimal.
+2. Hero: small “Build your own momentum” eyebrow; an oversized two-line “STRONGER. / EVERY DAY.” headline with the second line lime; supporting copy “Show up for yourself. We’ll take care of the rest.” Include “Find your first class” linking to the schedule and “Explore programs” linking to program cards. Beside it, create an angular lime/olive training panel with an original flat athlete silhouette in motion. It may suggest a video hero through layered visual depth, but the delivered file must work entirely offline and require no video.
+3. Under the hero, add a ruled statistics row reading “24/7 / Make time for you”, “12 / Ways to move”, and “ONE / Stronger you”; label these values as demonstration content where appropriate.
+4. Programs: three cards for Strength, Conditioning, and Recovery. Each has a simple original icon, brief description, duration, and real link to a matching schedule entry.
+5. Schedule: an accessible table or stacked mobile list with weekday, program, coach, and time. Provide a simple day filter whose selected state is accessible and whose fallback shows all classes. No booking or capacity claims.
+6. Coaches: three original illustrated profiles with sample names and training focus. Membership: two plainly marked sample plans, no checkout.
+7. Contact section: labeled name/email/message fields with client-side validation and a visible local demo confirmation. State clearly that the form is not connected. Footer includes internal links and the brand.
+
+Use ample whitespace to offset the large headline. Any decorative motion should be small, never flash, and disappear under reduced-motion settings. Do not claim real certifications or results.
+
+Implementation and delivery requirements:
+- Return one complete, self-contained index.html with inline CSS and JavaScript. Do not require a build step, framework, third-party scripts, external fonts, or remote assets. Use system font stacks and original CSS or inline SVG artwork for all visuals. Do not reproduce third-party brands or invent customer endorsements.
+- Use semantic header, nav, main, section, article, and footer elements with exactly one h1 and a logical heading hierarchy. Include a skip link, descriptive link text, accessible input labels, high-contrast focus indicators, and meaningful alt text for informative artwork. Mark decorative SVGs aria-hidden. All controls must work with a keyboard.
+- Build mobile first. At about 760px, collapse split heroes and card grids to one column; at about 1100px, constrain content in a centered max-width container. Support widths from 320px without horizontal scrolling. Touch controls need adequate hit areas. Text should scale with clamp(), while line lengths remain readable.
+- Honor prefers-reduced-motion. Any animation must be subtle and stop when reduced motion is requested. The design must remain clear when JavaScript is unavailable.
+- Use genuine anchors for navigation to sections and meaningful buttons for actions. Any demonstration-only behavior must say it is a demo; do not simulate a real purchase, subscription, booking, audio stream, or submitted message. Avoid placeholder hash links that lead nowhere. Do not store personal information.
+- Use original sample copy for the specified brand. Create enough content to feel complete: the requested hero, supporting sections, final call to action, and footer. Do not include the “Sample design” overlay from the catalog preview.
+- Check that links reach their target sections, all buttons have a clear result, content remains readable at 200% zoom, and no errors occur in the browser console. Return the final HTML in a single code block with no setup steps required.

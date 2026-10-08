@@ -1,0 +1,24 @@
+Sample AI prompt — replace with the prompt for your actual design.
+
+Create an original travel and tours landing page for “terra /”. The visual direction is immersive but serene: a full-width illustrated mountain-and-river hero, pale ivory type, forest-green accents, and a light olive background for the rest of the page. All scenery should be original inline SVG or CSS, with no remote photographs.
+
+Design tokens: light background #edf0df; forest #274238; muted forest #4f6d58; hero text #fcf7e6; secondary hero text #e6eddb; sky gradient #c6dedc to #f0e9d7; distant mountains #819995; middle mountains #506d65; near hills #2d5149; river #d5dec3. Use an Arial/system sans-serif stack, bold 64–72px desktop headings, 18px hero copy, 16px body text, and generous section spacing.
+
+Page structure:
+1. Hero and header: an original layered mountain landscape fills the top approximately 640px on desktop, with a translucent dark-green overlay for contrast. Position the terra / wordmark and Destinations, Our way, and “Plan a trip” navigation over it. Hero copy sits on the left: eyebrow “Go a little further”; headline “The world is / still full of wonder.”; description “Thoughtful journeys for your curious side.” Include a pale-olive “Find your next adventure” link to the destinations section. Draw mountains, rolling foreground hills, and a winding river in original SVG; the artwork must remain responsive and text contrast must be sufficient across the illustration.
+2. A narrow ruled transition strip reads “Less itinerary. More discovery.” and has an “Explore with Terra” anchor.
+3. Destinations: three original illustrated cards for Alpine Trails, Coastal Quiet, and Woodland Days. Each has a fictional trip description, sample duration and activity level, and a link to its trip-detail section. Do not imply live availability, real pricing, or an actual booking.
+4. Trip details: create short sections for each sample itinerary with a day-by-day outline, what to bring, and a plainly labeled illustrative inclusions list. Keep outdoor advice general, with no claims that terrain or weather is verified.
+5. Our way: three values cards for Small groups, Room to explore, and Thoughtful pacing. Include a story section with a second original landscape illustration. Avoid unverifiable environmental certification or real customer testimonials.
+6. Plan a trip: accessible local demonstration form for name, email, preferred trip, and a message. Validate required fields and explain on submission that the form is not connected and no booking has been made. Footer includes internal navigation and brand.
+
+On small screens, maintain a strong readable text overlay with a stable contrast layer and avoid excessively tall empty hero space. Stack destination cards and form columns. Any optional landscape animation is slow and disabled with reduced motion; static scenery is preferred.
+
+Implementation and delivery requirements:
+- Return one complete, self-contained index.html with inline CSS and JavaScript. Do not require a build step, framework, third-party scripts, external fonts, or remote assets. Use system font stacks and original CSS or inline SVG artwork for all visuals. Do not reproduce third-party brands or invent customer endorsements.
+- Use semantic header, nav, main, section, article, and footer elements with exactly one h1 and a logical heading hierarchy. Include a skip link, descriptive link text, accessible input labels, high-contrast focus indicators, and meaningful alt text for informative artwork. Mark decorative SVGs aria-hidden. All controls must work with a keyboard.
+- Build mobile first. At about 760px, collapse split heroes and card grids to one column; at about 1100px, constrain content in a centered max-width container. Support widths from 320px without horizontal scrolling. Touch controls need adequate hit areas. Text should scale with clamp(), while line lengths remain readable.
+- Honor prefers-reduced-motion. Any animation must be subtle and stop when reduced motion is requested. The design must remain clear when JavaScript is unavailable.
+- Use genuine anchors for navigation to sections and meaningful buttons for actions. Any demonstration-only behavior must say it is a demo; do not simulate a real purchase, subscription, booking, audio stream, or submitted message. Avoid placeholder hash links that lead nowhere. Do not store personal information.
+- Use original sample copy for the specified brand. Create enough content to feel complete: the requested hero, supporting sections, final call to action, and footer. Do not include the “Sample design” overlay from the catalog preview.
+- Check that links reach their target sections, all buttons have a clear result, content remains readable at 200% zoom, and no errors occur in the browser console. Return the final HTML in a single code block with no setup steps required.

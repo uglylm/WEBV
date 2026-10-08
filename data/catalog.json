@@ -1,0 +1,167 @@
+{
+  "version": 1,
+  "products": [
+    {
+      "id": "nova-saas",
+      "title": "Nova — SaaS Landing Page",
+      "category": "SaaS",
+      "tags": [
+        "dark",
+        "gradient",
+        "animated"
+      ],
+      "price": 0,
+      "media": "media/nova-saas.svg",
+      "prompt": "prompts/nova-saas.txt"
+    },
+    {
+      "id": "helix-ai",
+      "title": "Helix — AI Startup",
+      "category": "AI",
+      "tags": [
+        "futuristic",
+        "glow",
+        "glassmorphism"
+      ],
+      "price": 39,
+      "media": "media/helix-ai.svg",
+      "stripeUrl": "https://buy.stripe.com/test_helix_ai"
+    },
+    {
+      "id": "atlas-agency",
+      "title": "Atlas — Creative Agency",
+      "category": "Agency",
+      "tags": [
+        "bold",
+        "editorial"
+      ],
+      "price": 29,
+      "media": "media/atlas-agency.svg",
+      "stripeUrl": "https://buy.stripe.com/test_atlas_agency"
+    },
+    {
+      "id": "orbit-fintech",
+      "title": "Orbit — Fintech Dashboard",
+      "category": "Fintech",
+      "tags": [
+        "dashboard",
+        "charts",
+        "dark"
+      ],
+      "price": 49,
+      "media": "media/orbit-fintech.svg",
+      "stripeUrl": "https://buy.stripe.com/test_orbit_fintech"
+    },
+    {
+      "id": "pulse-gym",
+      "title": "Pulse — Gym & Fitness",
+      "category": "Fitness",
+      "tags": [
+        "energetic",
+        "video hero"
+      ],
+      "price": 0,
+      "media": "media/pulse-gym.svg",
+      "prompt": "prompts/pulse-gym.txt"
+    },
+    {
+      "id": "brew-coffee",
+      "title": "Brew — Coffee Roastery",
+      "category": "Restaurant",
+      "tags": [
+        "warm",
+        "minimal"
+      ],
+      "price": 0,
+      "media": "media/brew-coffee.svg",
+      "prompt": "prompts/brew-coffee.txt"
+    },
+    {
+      "id": "vertex-crypto",
+      "title": "Vertex — Crypto / Web3",
+      "category": "Crypto",
+      "tags": [
+        "futuristic",
+        "neon",
+        "3d"
+      ],
+      "price": 59,
+      "media": "media/vertex-crypto.svg",
+      "stripeUrl": "https://buy.stripe.com/test_vertex_crypto"
+    },
+    {
+      "id": "lumen-portfolio",
+      "title": "Lumen — Designer Portfolio",
+      "category": "Portfolio",
+      "tags": [
+        "grid",
+        "light",
+        "clean"
+      ],
+      "price": 0,
+      "media": "media/lumen-portfolio.svg",
+      "prompt": "prompts/lumen-portfolio.txt"
+    },
+    {
+      "id": "northwind-realestate",
+      "title": "Northwind — Real Estate",
+      "category": "Real Estate",
+      "tags": [
+        "listings",
+        "map",
+        "professional"
+      ],
+      "price": 35,
+      "media": "media/northwind-realestate.svg",
+      "stripeUrl": "https://buy.stripe.com/test_northwind_re"
+    },
+    {
+      "id": "echo-podcast",
+      "title": "Echo — Podcast Network",
+      "category": "Media",
+      "tags": [
+        "audio",
+        "dark",
+        "player"
+      ],
+      "price": 0,
+      "media": "media/echo-podcast.svg",
+      "prompt": "prompts/echo-podcast.txt"
+    },
+    {
+      "id": "quantum-dev-tool",
+      "title": "Quantum — Dev Tool / API",
+      "category": "SaaS",
+      "tags": [
+        "terminal",
+        "code",
+        "futuristic"
+      ],
+      "price": 45,
+      "media": "media/quantum-dev-tool.svg",
+      "stripeUrl": "https://buy.stripe.com/test_quantum_dev"
+    },
+    {
+      "id": "terra-travel",
+      "title": "Terra — Travel & Tours",
+      "category": "Travel",
+      "tags": [
+        "fullscreen",
+        "photography"
+      ],
+      "price": 0,
+      "media": "media/terra-travel.svg",
+      "prompt": "prompts/terra-travel.txt"
+    }
+  ],
+  "ads": [
+    {
+      "id": "sponsor-example",
+      "title": "Your sponsor",
+      "image": "media/sponsor-example.svg",
+      "url": "https://example.com",
+      "after": 3,
+      "enabled": true
+    }
+  ]
+}

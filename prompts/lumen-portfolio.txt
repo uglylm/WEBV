@@ -1,0 +1,24 @@
+Sample AI prompt — replace with the prompt for your actual design.
+
+Create an original designer portfolio for “lumen /”, a fictional independent designer. The visual direction is airy, light, quietly editorial, and focused on a tidy project grid with original abstract artwork. Use a very pale green-white background, deep forest text, soft sage accents, thin rules, and rounded cards.
+
+Design tokens: canvas #f6f7f2; text #233b31; secondary heading #5b806d; muted copy #78877e; lines #d3ddd4; card artwork backgrounds #d8e4ce, #eee0d2, and #d3dde2. Font is Arial/system sans-serif with restrained 600-weight headings, 16px body copy, 12px uppercase labels, 12px cards, and 48px horizontal desktop padding in a centered maximum width around 1200px.
+
+Page structure:
+1. Header: lumen / wordmark on the left, Work, About, and “Let’s connect” navigation on the right. Use a subtle bottom rule.
+2. Hero: eyebrow “Designer + curious human”; headline “Making everyday / feel extraordinary.” with the second line muted sage; short description “Brand identities, digital experiences, and room for a little wonder.” Keep the hero mostly typographic with generous space.
+3. Selected work: a three-column grid on desktop. First card is KIN / Brand identity, sage artwork featuring a bold abstract ring and diagonal capsule. Second is PAPER / Digital commerce, a warm neutral composition of overlapping tilted paper cards with a small ‘paper’ wordmark. Third is EVER / Product design, a cool-blue abstract landscape with a pale circular sun. Draw artwork in inline SVG or CSS and avoid external assets. Each project has title, discipline, year, and a descriptive “Read case study” link.
+4. Include genuine case study sections on the same page for the three projects. Each case study describes the fictional brief, design approach, a few deliverables, and reflection, with two additional simple original visual panels. Clearly identify all clients/projects as fictional examples; do not invent business metrics.
+5. About: concise personal introduction, a services list (Brand design, Websites, Product direction), and a simple process with Discover, Shape, and Refine steps.
+6. Contact: welcoming heading and an accessible demonstration message form with name, email, message, validation, and visible “Demo only — connect a form service to receive messages” feedback. Do not fake sending. Footer repeats the brand and includes internal anchors.
+
+Give informative art concise alt text; purely decorative shapes are hidden from screen readers. At small sizes stack all projects and avoid tiny captions. Preserve generous whitespace without making users scroll through empty decorative space.
+
+Implementation and delivery requirements:
+- Return one complete, self-contained index.html with inline CSS and JavaScript. Do not require a build step, framework, third-party scripts, external fonts, or remote assets. Use system font stacks and original CSS or inline SVG artwork for all visuals. Do not reproduce third-party brands or invent customer endorsements.
+- Use semantic header, nav, main, section, article, and footer elements with exactly one h1 and a logical heading hierarchy. Include a skip link, descriptive link text, accessible input labels, high-contrast focus indicators, and meaningful alt text for informative artwork. Mark decorative SVGs aria-hidden. All controls must work with a keyboard.
+- Build mobile first. At about 760px, collapse split heroes and card grids to one column; at about 1100px, constrain content in a centered max-width container. Support widths from 320px without horizontal scrolling. Touch controls need adequate hit areas. Text should scale with clamp(), while line lengths remain readable.
+- Honor prefers-reduced-motion. Any animation must be subtle and stop when reduced motion is requested. The design must remain clear when JavaScript is unavailable.
+- Use genuine anchors for navigation to sections and meaningful buttons for actions. Any demonstration-only behavior must say it is a demo; do not simulate a real purchase, subscription, booking, audio stream, or submitted message. Avoid placeholder hash links that lead nowhere. Do not store personal information.
+- Use original sample copy for the specified brand. Create enough content to feel complete: the requested hero, supporting sections, final call to action, and footer. Do not include the “Sample design” overlay from the catalog preview.
+- Check that links reach their target sections, all buttons have a clear result, content remains readable at 200% zoom, and no errors occur in the browser console. Return the final HTML in a single code block with no setup steps required.

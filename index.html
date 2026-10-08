@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>TemplateVault — Website design prompts. Free &amp; premium.</title>
+  <meta name="description" content="Discover website designs and the AI prompts to recreate them. Copy a free prompt or buy a premium design prompt.">
+  <meta name="theme-color" content="#0a0a0f">
+  <meta property="og:title" content="TemplateVault — Website design prompts">
+  <meta property="og:description" content="Find your next website design. Copy a free AI prompt or choose a premium prompt.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./assets/styles.css">
+  <script src="./assets/settings.js" defer></script>
+  <script src="./assets/app.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="hwrap">
+    <a class="brand" href="./"><span class="mark">T</span>Template<span>Vault</span></a>
+    <div class="search">
+      <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="q" type="search" placeholder="Search website designs…" autocomplete="off" aria-label="Search website designs">
+      <kbd>/</kbd>
+    </div>
+  </div>
+</header>
+<main class="wrap">
+  <section class="hero">
+    <h1>Your next website starts<br>with a great <em>prompt</em>.</h1>
+    <p>Browse website designs, find a look you love, and use its AI prompt to build your own. Copy a free prompt in one click, or choose a premium prompt. Paste it into your favorite AI website builder to get started.</p>
+    <div class="stats" id="stats" aria-live="polite"></div>
+  </section>
+  <div class="toolbar">
+    <div class="segmented" id="typeFilter" role="group" aria-label="Filter by price">
+      <button type="button" data-type="all" class="active" aria-pressed="true">All</button>
+      <button type="button" data-type="free" aria-pressed="false">Free</button>
+      <button type="button" data-type="paid" aria-pressed="false">Premium</button>
+    </div>
+    <div class="cats" id="catFilter" role="group" aria-label="Filter by category"></div>
+    <select class="sortsel" id="sort" aria-label="Sort website designs">
+      <option value="featured">Featured</option><option value="az">Name A–Z</option>
+      <option value="price-asc">Price: low → high</option><option value="price-desc">Price: high → low</option>
+    </select>
+  </div>
+  <section class="grid" id="grid" aria-label="Website design prompts" aria-busy="true">
+    <div class="empty"><strong>Loading designs…</strong></div>
+  </section>
+  <noscript><p class="policy-note">Please enable JavaScript to browse designs and copy AI prompts.</p></noscript>
+  <div class="grid-foot">
+    <p class="count" id="count" role="status"></p>
+    <div class="load-sentinel" id="loadSentinel" aria-hidden="true" hidden></div>
+    <button class="btn ghost big" id="retryLoad" type="button" hidden>Try again</button>
+  </div>
+</main>
+<footer>
+  <div class="wrap footer-content">
+    <div class="footer-details">
+      <p class="footer-copyright">© Template Vault <span id="yr">2026</span>. All rights reserved</p>
+      <nav class="footer-links" aria-label="Policies"><a href="./terms.html">Terms of Use</a><a href="./cookies.html">Cookie Policy</a><a href="./refunds.html">Refund Policy</a></nav>
+    </div>
+    <p class="footer-help">Need help? <a class="support" data-support href="mailto:support@templatevault.com?subject=TemplateVault%20Support%20Request" title="Email us">Contact Us</a></p>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<dialog class="preview-modal" id="previewModal" aria-labelledby="previewTitle">
+  <div class="preview-box">
+    <div class="preview-toolbar"><h2 id="previewTitle">Website preview</h2><button class="close-btn" id="previewClose" type="button" aria-label="Close preview" autofocus>×</button></div>
+    <div class="preview-stage" id="previewStage"></div>
+    <div class="preview-actions" id="previewActions"></div>
+  </div>
+</dialog>
+<dialog class="prompt-modal" id="promptModal" aria-labelledby="promptTitle" aria-describedby="promptHint">
+  <div class="prompt-box">
+    <div class="preview-toolbar"><h2 id="promptTitle">AI prompt</h2><button class="close-btn" id="promptClose" type="button" aria-label="Close AI prompt">×</button></div>
+    <p class="prompt-hint" id="promptHint">Your browser could not copy automatically. Select the prompt below, then use Ctrl/Cmd + C. Paste it into your AI website builder.</p>
+    <textarea id="promptText" aria-label="AI website prompt" readonly spellcheck="false"></textarea>
+    <div class="prompt-actions"><button class="btn ghost" id="promptClose2" type="button">Close</button><button class="btn primary" id="promptCopy" type="button">Copy prompt</button></div>
+  </div>
+</dialog>
+</body>
+</html>

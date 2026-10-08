@@ -1,0 +1,23 @@
+Sample AI prompt — replace with the prompt for your actual design.
+
+Create an original SaaS landing page for “Nova”, a thoughtful workspace for creative teams. Match this design direction: deep plum canvas, lavender and electric-blue accents, a generous split hero, and a polished product dashboard illustration. The tone is calm, practical, and optimistic.
+
+Design tokens: background #0d0b19; elevated panels #161322 and #211b33; border #382a50; primary text #f3efff; muted text #aaa1bb; accent #b59aff; button gradient from #ad7aff to #5265ff. Use an Arial/system sans-serif stack, bold tightly spaced headings, 16px body type, rounded 14px panels, and 48–80px desktop section spacing.
+
+Page structure:
+1. Header: a simple four-point star beside the lowercase “nova” wordmark, navigation to Features, How it works, and Plans. Include a visible “Start your workspace” link to a final signup demonstration section.
+2. Hero: eyebrow “The next way to work”; two-line headline “Less busywork. / More big ideas.”; supporting copy “One thoughtful workspace for everything your team is ready to build.” Place a filled gradient call to action and a quieter “See how it works” link beneath. On the right, create a static accessible dashboard illustration: miniature window controls, Overview heading, a Projects in motion card with 24, a Team momentum card with +38%, and an ascending lavender activity chart. Label numbers as illustrative sample data. Draw it in HTML/CSS or inline SVG; avoid a screenshot dependency.
+3. Supporting sections: three compact feature cards for shared projects, focused conversations, and clear priorities; a numbered three-step process; a two-column explanation of calm collaboration; and simple Starter and Team plan cards with clearly identified sample prices. The cards use thin borders and restrained gradients.
+4. Final section: “A home for your next breakthrough.” Include a labeled email input and a button that validates the email locally and shows “Demo only — connect your signup service before publishing.” Do not actually submit or retain the email.
+5. Footer: wordmark, copyright, anchor links, and concise product purpose.
+
+Responsive behavior: the header must wrap or use an accessible menu button on small screens; text precedes the dashboard on mobile. Keep the dashboard proportionate and prevent tiny unreadable text. Use a subtle ambient gradient behind the hero and, only when reduced motion is not requested, a slow decorative glow animation.
+
+Implementation and delivery requirements:
+- Return one complete, self-contained index.html with inline CSS and JavaScript. Do not require a build step, framework, third-party scripts, external fonts, or remote assets. Use system font stacks and original CSS or inline SVG artwork for all visuals. Do not reproduce third-party brands or invent customer endorsements.
+- Use semantic header, nav, main, section, article, and footer elements with exactly one h1 and a logical heading hierarchy. Include a skip link, descriptive link text, accessible input labels, high-contrast focus indicators, and meaningful alt text for informative artwork. Mark decorative SVGs aria-hidden. All controls must work with a keyboard.
+- Build mobile first. At about 760px, collapse split heroes and card grids to one column; at about 1100px, constrain content in a centered max-width container. Support widths from 320px without horizontal scrolling. Touch controls need adequate hit areas. Text should scale with clamp(), while line lengths remain readable.
+- Honor prefers-reduced-motion. Any animation must be subtle and stop when reduced motion is requested. The design must remain clear when JavaScript is unavailable.
+- Use genuine anchors for navigation to sections and meaningful buttons for actions. Any demonstration-only behavior must say it is a demo; do not simulate a real purchase, subscription, booking, audio stream, or submitted message. Avoid placeholder hash links that lead nowhere. Do not store personal information.
+- Use original sample copy for the specified brand. Create enough content to feel complete: the requested hero, supporting sections, final call to action, and footer. Do not include the “Sample design” overlay from the catalog preview.
+- Check that links reach their target sections, all buttons have a clear result, content remains readable at 200% zoom, and no errors occur in the browser console. Return the final HTML in a single code block with no setup steps required.

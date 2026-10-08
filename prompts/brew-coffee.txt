@@ -1,0 +1,25 @@
+Sample AI prompt — replace with the prompt for your actual design.
+
+Create an original artisan coffee roastery website for “brew.” The mood is slow mornings, tactile warmth, and quiet confidence. Use a warm cream canvas, espresso-brown typography, soft tan circles, and original vector illustrations of a coffee bag and cup. No external photos are required.
+
+Design tokens: background #eee4d0; text #44351f; secondary text #807157; accents #806044 and #65492e; border #cabc9d; light label surface #f7efd9; illustration tan #d8c39b. Use a rounded-looking system sans-serif stack, 56–64px desktop hero type that scales gracefully, 16–18px body text, small uppercase eyebrows, generous 72px sections, and restrained 10px corners.
+
+Page structure:
+1. Header: lowercase “brew.” wordmark with links Our coffee, Our story, and Visit the roastery, separated from the hero by a thin tan rule.
+2. Hero: eyebrow “Slow mornings. Good coffee.”; two-line headline “A little ritual. / A better day.”; description “Thoughtfully sourced. Patiently roasted. Made to bring you back to the moment.” Add a dark-brown “Find your roast” link to the coffee collection. On the right, draw a kraft coffee bag at a slight angle over a large tan circle, with a cream BREW / DAILY BLEND label, and a round ceramic cup showing a coffee-colored surface. The illustration must be original inline SVG or CSS.
+3. A slim divider section reads “Good things take a little time.” and “Freshly roasted / Always”.
+4. Coffee collection: three product cards for Daily Blend, Bright Morning, and After Hours. Each includes an original bag illustration, sample tasting notes, sample roast level, and sample price. Use “Explore roast” buttons to expand accessible details or link to detailed sections. Do not include a working checkout or imply inventory.
+5. Story: a two-column narrative about thoughtful sourcing and patient roasting, with three simple value cards. Avoid unverifiable sustainability claims or geographic sourcing assertions.
+6. Brew guide: accessible tabs or a simple list for Pour-over, French press, and Espresso, with concrete illustrative ratios and short steps. Provide visible current-tab states and a keyboard-operable control pattern, or choose anchors for simplicity.
+7. Visit section: clearly labeled sample opening hours and sample location text; do not invent a real street address or map. Add a final newsletter form that validates email locally and visibly explains that signup is a demo until connected. Footer includes brand and navigation.
+
+Use calm static compositions. On mobile, keep the headline before the illustration, coffee cards stacked, and controls comfortable to tap.
+
+Implementation and delivery requirements:
+- Return one complete, self-contained index.html with inline CSS and JavaScript. Do not require a build step, framework, third-party scripts, external fonts, or remote assets. Use system font stacks and original CSS or inline SVG artwork for all visuals. Do not reproduce third-party brands or invent customer endorsements.
+- Use semantic header, nav, main, section, article, and footer elements with exactly one h1 and a logical heading hierarchy. Include a skip link, descriptive link text, accessible input labels, high-contrast focus indicators, and meaningful alt text for informative artwork. Mark decorative SVGs aria-hidden. All controls must work with a keyboard.
+- Build mobile first. At about 760px, collapse split heroes and card grids to one column; at about 1100px, constrain content in a centered max-width container. Support widths from 320px without horizontal scrolling. Touch controls need adequate hit areas. Text should scale with clamp(), while line lengths remain readable.
+- Honor prefers-reduced-motion. Any animation must be subtle and stop when reduced motion is requested. The design must remain clear when JavaScript is unavailable.
+- Use genuine anchors for navigation to sections and meaningful buttons for actions. Any demonstration-only behavior must say it is a demo; do not simulate a real purchase, subscription, booking, audio stream, or submitted message. Avoid placeholder hash links that lead nowhere. Do not store personal information.
+- Use original sample copy for the specified brand. Create enough content to feel complete: the requested hero, supporting sections, final call to action, and footer. Do not include the “Sample design” overlay from the catalog preview.
+- Check that links reach their target sections, all buttons have a clear result, content remains readable at 200% zoom, and no errors occur in the browser console. Return the final HTML in a single code block with no setup steps required.
