@@ -290,7 +290,7 @@ button.thumb{background:linear-gradient(135deg,#171722,#1f1a2e);border-bottom:1p
 .thumb video{width:100%;height:100%;object-fit:cover;object-position:top center}
 .btn:disabled{cursor:not-allowed}
 .media-fallback{padding:28px;display:grid;place-items:center;text-align:center;min-height:200px;color:var(--muted);background:linear-gradient(135deg,#171722,#1f1a2e)}
-.ad-card{display:block;position:relative;min-height:325px;height:100%;background:var(--card)}
+.ad-card{display:block;position:relative;min-height:0;height:auto;background:var(--card)}
 .ad-card img{display:block;width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center}
 .ad-card .media-fallback{height:100%}
 .footer-content{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
